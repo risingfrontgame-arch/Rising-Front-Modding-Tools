@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7047a5d1249812439831cbcd02803de, type: 3}
+  m_Name: AK47 Scoped
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 1179136813415420635, guid: c8615f5600bc7084299780452bb8cc67,
+    type: 3}
+  itemWeight: 6
+  itemName: AK47 Scoped
+  itemIcon: {fileID: 21300000, guid: 9fbf9b6e4f15f6642b0eee1eb907e731, type: 3}

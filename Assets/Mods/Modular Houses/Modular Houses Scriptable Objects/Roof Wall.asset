@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdefb87e0dfbdd24ea8bcd6177617847, type: 3}
+  m_Name: Roof Wall
+  m_EditorClassIdentifier: 
+  ID: -111653921
+  icon: {fileID: 21300000, guid: c0fa9297c73048048a2a6a3d9cce4eca, type: 3}
+  price: 5
+  objName: Roof Wall
+  objPrefab: {fileID: 7868753277492780605, guid: 5fa2ee2317412de4d971b66c5373a41f,
+    type: 3}
+  timePeriod: 0

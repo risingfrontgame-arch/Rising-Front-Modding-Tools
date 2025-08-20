@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae13c8609446ec408ab8977332017ae, type: 3}
+  m_Name: Confederate Officcer
+  m_EditorClassIdentifier: 
+  unitType: 0
+  health: 100
+  accuracy: 0.0193
+  weaponType: 1
+  shotCooldown: 0.5
+  magSize: 6
+  reloadTime: 5
+  damage: 40
+  speedMultiplier: 1
+  range: 60
+  shotSounds: {fileID: 8300000, guid: f5693148ddb134042bffab1097b5a7f6, type: 3}
+  weaponModel: {fileID: 2759005051575879242, guid: 68c6d1cca9da46941b0fc3bb09f10d46,
+    type: 3}
+  body: {fileID: 9108436318554021764, guid: 5568bcb9b3ae9964da1f546f101f18f7, type: 3}
+  headGear:
+  - {fileID: 2743310110993506680, guid: ea371182a0f46cd429c507caa9e7751f, type: 3}
+  - {fileID: 9098927532016283758, guid: fc9d0331675c7ba40a1091b7e71cbe7d, type: 3}
+  backGear:
+  - {fileID: 1053810362717392655, guid: 4c8bd1a5ee6dde144add5fc7325518a0, type: 3}
+  - {fileID: 6383219417989831936, guid: 255206db040768742b10db7b94748108, type: 3}
+  - {fileID: 7676098448753493505, guid: 9bbd693d4d3c9d947adbf85c64421df1, type: 3}
+  - {fileID: 9063945340791817008, guid: 98a6ac245e925ce4d9b6898fed151def, type: 3}
+  - {fileID: 8226574290493993189, guid: 94a6858c58613124088356fb29449e6a, type: 3}

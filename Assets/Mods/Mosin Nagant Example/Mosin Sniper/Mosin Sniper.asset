@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7047a5d1249812439831cbcd02803de, type: 3}
+  m_Name: Mosin Sniper
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 4743628558832461601, guid: 5ca7d911875cd194e9e3ec7bec0b8147,
+    type: 3}
+  itemWeight: 11
+  itemName: Mosin 91/30 Sniper
+  itemIcon: {fileID: 21300000, guid: b0ce01a9fe8fb6a4c937c8b6bf0aff03, type: 3}

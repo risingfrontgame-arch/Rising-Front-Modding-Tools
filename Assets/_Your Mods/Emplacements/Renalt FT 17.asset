@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdefb87e0dfbdd24ea8bcd6177617847, type: 3}
+  m_Name: Renalt FT 17
+  m_EditorClassIdentifier: 
+  ID: 192590367
+  icon: {fileID: 21300000, guid: d9f16ed2a247fa04086c09cbae59d72b, type: 3}
+  price: 100
+  objName: Renalt FT 17
+  objPrefab: {fileID: 3301834328378096069, guid: 3aee0ba60ed4dad459f0d3333b1f647c,
+    type: 3}
+  timePeriod: 1917

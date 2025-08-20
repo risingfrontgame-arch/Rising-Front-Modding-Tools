@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae13c8609446ec408ab8977332017ae, type: 3}
+  m_Name: Union Soldier
+  m_EditorClassIdentifier: 
+  unitType: 0
+  health: 100
+  accuracy: 0.01
+  weaponType: 0
+  shotCooldown: 0.25
+  magSize: 1
+  reloadTime: 10
+  damage: 90
+  speedMultiplier: 1
+  range: 60
+  shotSounds: {fileID: 8300000, guid: 245936e428c510748a663fe84e9f12f4, type: 3}
+  weaponModel: {fileID: 8290788430566803628, guid: aa6e21c8356fce141a9c7ce42c7ab95f,
+    type: 3}
+  body: {fileID: 5528405044416531834, guid: 60ecba622c20a314c91202105f8232c3, type: 3}
+  headGear:
+  - {fileID: 1646329160573538843, guid: c2c405a3c4aef4b4d96a68d50657d9a9, type: 3}
+  backGear:
+  - {fileID: 1053810362717392655, guid: 4c8bd1a5ee6dde144add5fc7325518a0, type: 3}
+  - {fileID: 6383219417989831936, guid: 255206db040768742b10db7b94748108, type: 3}
+  - {fileID: 7676098448753493505, guid: 9bbd693d4d3c9d947adbf85c64421df1, type: 3}
+  - {fileID: 9063945340791817008, guid: 98a6ac245e925ce4d9b6898fed151def, type: 3}
+  - {fileID: 8226574290493993189, guid: 94a6858c58613124088356fb29449e6a, type: 3}

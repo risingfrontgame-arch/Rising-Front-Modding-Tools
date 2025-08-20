@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3133594261
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0dcd2803cf5e9101265f4b75ef92af84
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1fbdfb14d7581214dd6ccae224fd18c4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c17ca1d2569424ba1be3606fe1bb5c7d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6351be8430e18064eb008ce3f87d035c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cdefb87e0dfbdd24ea8bcd6177617847, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/my cube.asset
+Dependencies: []

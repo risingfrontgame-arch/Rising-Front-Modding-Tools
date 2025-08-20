@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 4288343074
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cb72bb59c10d708b94ab79cea116aae2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f9c5c78a49dd16ee4a4d4504a14869aa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dae13c8609446ec408ab8977332017ae, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f67c82af633d56e4aaa4a87d61406502, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 52edacbfb55a6f044987e267239a4f6f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Mods/Civil War Mod/Soldiers/Confederate Platoon.asset
+Dependencies: []

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52edacbfb55a6f044987e267239a4f6f, type: 3}
+  m_Name: Union Platoon
+  m_EditorClassIdentifier: 
+  ID: 
+  flagMat: {fileID: 2100000, guid: 9be22468b2ade8e4f9b65cdb607530ef, type: 2}
+  playerShirtColor: {fileID: 0}
+  isTeam1: 1
+  groupIcon: {fileID: 21300000, guid: 012cd802869def043bfee85cd40f521a, type: 3}
+  soldierTypes:
+  - {fileID: 11400000, guid: 5b636788f3ea93e478866e72054a02d3, type: 2}
+  - {fileID: 11400000, guid: bb6514005d65a45459077d7e9d504381, type: 2}
+  - {fileID: 11400000, guid: f333a41b2347f254a8a95f0089a990f6, type: 2}
+  - {fileID: 11400000, guid: 5509ebec748279f49bd586567beee887, type: 2}
+  - {fileID: 11400000, guid: 5509ebec748279f49bd586567beee887, type: 2}
+  - {fileID: 11400000, guid: f333a41b2347f254a8a95f0089a990f6, type: 2}
+  - {fileID: 11400000, guid: bb6514005d65a45459077d7e9d504381, type: 2}
+  - {fileID: 11400000, guid: 5b636788f3ea93e478866e72054a02d3, type: 2}
+  - {fileID: 11400000, guid: bb6514005d65a45459077d7e9d504381, type: 2}
+  - {fileID: 11400000, guid: 5509ebec748279f49bd586567beee887, type: 2}
+  platoonSize: 4
+  price: 100
+  timePeriod: 1865

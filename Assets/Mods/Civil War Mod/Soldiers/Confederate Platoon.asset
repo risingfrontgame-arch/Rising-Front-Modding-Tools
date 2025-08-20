@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52edacbfb55a6f044987e267239a4f6f, type: 3}
+  m_Name: Confederate Platoon
+  m_EditorClassIdentifier: 
+  ID: 
+  flagMat: {fileID: 2100000, guid: 9564f2b7e34ee3b44963e13b780cb86f, type: 2}
+  playerShirtColor: {fileID: 0}
+  isTeam1: 0
+  groupIcon: {fileID: 21300000, guid: 3bca822429350104db85dc0e4e7c969c, type: 3}
+  soldierTypes:
+  - {fileID: 11400000, guid: 871e8d35dceea0e43a20a0a6a8ccef92, type: 2}
+  - {fileID: 11400000, guid: 7b37a8097e7b03a4485510b1934b36a8, type: 2}
+  - {fileID: 11400000, guid: da52130d590ddb145addd8a6692c9c40, type: 2}
+  - {fileID: 11400000, guid: 7289cb07b8babf044a76a44699261bf6, type: 2}
+  - {fileID: 11400000, guid: 7289cb07b8babf044a76a44699261bf6, type: 2}
+  - {fileID: 11400000, guid: da52130d590ddb145addd8a6692c9c40, type: 2}
+  - {fileID: 11400000, guid: 7b37a8097e7b03a4485510b1934b36a8, type: 2}
+  - {fileID: 11400000, guid: 7b37a8097e7b03a4485510b1934b36a8, type: 2}
+  - {fileID: 11400000, guid: da52130d590ddb145addd8a6692c9c40, type: 2}
+  - {fileID: 11400000, guid: 7289cb07b8babf044a76a44699261bf6, type: 2}
+  platoonSize: 4
+  price: 100
+  timePeriod: 1865

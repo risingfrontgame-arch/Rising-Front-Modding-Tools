@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 3183297708
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: civil war cannon.workshopcontent
+      Dependencies: {}
+    Info_1:
+      Name: colt navy.workshopcontent
+      Dependencies: {}
+    Info_2:
+      Name: gattling gun.workshopcontent
+      Dependencies: {}
+    Info_3:
+      Name: springfield musket (3482734).workshopcontent
+      Dependencies: {}
+    Info_4:
+      Name: confederate platoon.workshopcontent
+      Dependencies: {}
+    Info_5:
+      Name: mp5 (3432434).workshopcontent
+      Dependencies: {}
+    Info_6:
+      Name: renalt ft 17 static.workshopcontent
+      Dependencies: {}
+    Info_7:
+      Name: union platoon.workshopcontent
+      Dependencies: {}
+    Info_8:
+      Name: ak47 weapon mod (432434).workshopcontent
+      Dependencies: {}
+    Info_9:
+      Name: spike barricade.workshopcontent
+      Dependencies: {}
+    Info_10:
+      Name: ak47 scoped (23482937).workshopcontent
+      Dependencies: {}
+    Info_11:
+      Name: pistol 324983724324987.workshopcontent
+      Dependencies: {}
+    Info_12:
+      Name: mg 42 (423982334759).workshopcontent
+      Dependencies: {}
+    Info_13:
+      Name: mosin 91.30 sniper (34234324234).workshopcontent
+      Dependencies: {}
