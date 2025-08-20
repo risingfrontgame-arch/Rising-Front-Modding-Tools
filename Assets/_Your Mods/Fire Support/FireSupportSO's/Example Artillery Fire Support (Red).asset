@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fda637c42f427f499e1148d30201da2, type: 3}
+  m_Name: Example Artillery Fire Support (Red)
+  m_EditorClassIdentifier: 
+  ID: 000
+  prefab: {fileID: 4608124930062273413, guid: a69c38b5235bb1d4f8c2c15b1c110a80, type: 3}
+  chanceToSpawnSecondaryPrefabs: 25
+  secondaryPrefabs:
+  - {fileID: 4608124930062273413, guid: a69c38b5235bb1d4f8c2c15b1c110a80, type: 3}
+  icon: {fileID: 21300000, guid: 3658d6a673ddc4f4d8f1e6e7f9038ea9, type: 3}
+  mapIcon: {fileID: 4635956974093552007, guid: 8fcf086ed2a6a06438b012ff3c502062, type: 3}
+  name: Example Artillery Fire Support
+  isGreenTeam: 0
+  price: 50

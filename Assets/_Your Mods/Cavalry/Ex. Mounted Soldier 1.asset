@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6995f88025f37424fa832d6ee364465f, type: 3}
+  m_Name: Ex. Mounted Soldier 1
+  m_EditorClassIdentifier: 
+  maxSpeed: 7
+  health: 165
+  range: 70
+  fireRate: 1
+  accuracy: 0.015
+  reloadTime: 6
+  damage: 50
+  magSize: 1
+  canDamageArmor: 0
+  armorDamage: 10
+  soldierAnimator: {fileID: 9100000, guid: 313f248f0d549e6459fcd741349b542b, type: 2}
+  impactEffect: {fileID: 198000010535933408, guid: a475880e7da0e9548aa05cb7933752cd,
+    type: 3}
+  bloodEffect: {fileID: 198000011143922816, guid: e5a3d6da48298a0458c1990f58c27069,
+    type: 3}
+  weaponSounds:
+  - {fileID: 8300000, guid: 245936e428c510748a663fe84e9f12f4, type: 3}
+  - {fileID: 8300000, guid: 34e9d6556a317334b909c7fb56ef98f7, type: 3}
+  weaponSoundMaxRange: 50
+  weaponProjectile: {fileID: 4069971709620241652, guid: 2120d5ed6c6998848bc8266ca59bbdc9,
+    type: 3}
+  projectileSpeed: 7
+  isMelee: 0
+  findTargetRange: 71
+  attackDelay: 0
+  horseMaterial: {fileID: 2100000, guid: 445fce59d233324428b30c7c5c729204, type: 2}
+  horseMaineMaterial: {fileID: 2100000, guid: 905be170c6421ed4bb6bac2b833d1042, type: 2}
+  horseBackGear:
+  - {fileID: 3849189594071728566, guid: 2a88ed74e12a4ef47ae5fd9a0de39332, type: 3}
+  - {fileID: 8529369239392967710, guid: 45d1e844723cac54bacdfb2c1a759d11, type: 3}
+  horseHeadGear: []
+  soldierBody: {fileID: 3739339110331120256, guid: 60ecba622c20a314c91202105f8232c3,
+    type: 3}
+  weapon: {fileID: 8290788430566803628, guid: aa6e21c8356fce141a9c7ce42c7ab95f, type: 3}
+  headGear: []
+  backGear:
+  - {fileID: 9063945340791817008, guid: 98a6ac245e925ce4d9b6898fed151def, type: 3}

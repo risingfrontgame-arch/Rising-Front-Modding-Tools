@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3154150298262554136}
   - component: {fileID: 4622988033856206933}
-  - component: {fileID: 8700518065177558801}
   m_Layer: 10
   m_Name: Confederate Body
   m_TagString: Untagged
@@ -114,16 +113,3 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0051136017, y: 0.59526944, z: 0.13091743}
     m_Extent: {x: 4.809112, y: 4.4970646, z: 0.8289275}
   m_DirtyAABB: 0
---- !u!114 &8700518065177558801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9108436318554021764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f67c82af633d56e4aaa4a87d61406502, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lodSize: 2
