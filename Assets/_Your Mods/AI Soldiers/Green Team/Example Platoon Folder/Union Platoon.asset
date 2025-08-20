@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 
   flagMat: {fileID: 2100000, guid: 9be22468b2ade8e4f9b65cdb607530ef, type: 2}
-  playerShirtColor: {fileID: 0}
+  playerShirtColor: {fileID: 2100000, guid: 9ab6eab46c0da5a4680313389775e834, type: 2}
   isTeam1: 1
   groupIcon: {fileID: 21300000, guid: 012cd802869def043bfee85cd40f521a, type: 3}
   soldierTypes:
