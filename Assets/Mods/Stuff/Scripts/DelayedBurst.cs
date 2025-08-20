@@ -15,7 +15,7 @@ public class DelayedBurst : MonoBehaviour
     [SerializeField] float bulletDamage = 100f;
 
     [SerializeField] int bulletAmount = 100;
-    int startBulletAmount;
+    [SerializeField] int startBulletAmount;
     [SerializeField] bool playOnAwake = false;
     float nextShot;
 
@@ -27,9 +27,12 @@ public class DelayedBurst : MonoBehaviour
     private void Start()
     {
         startTime = Time.time;
+
+    }
+    private void Awake()
+    {
         startBulletAmount = bulletAmount;
     }
-
 
     private void OnEnable()
     {

@@ -1562,8 +1562,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47a520e0c8da2d4b9f6a353cb463c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   cameraHolder: {fileID: 3002623611335774501}
   fireRate: 8
+  attackAngleLimit: 360
   muzzleFlash: {fileID: 7769781423176493386}
   bullet: {fileID: 8344938867620616854, guid: 45dd290657892b743a6def06e0dcc9c2, type: 3}
   shootPos: {fileID: 5246720651375560801}
@@ -1606,7 +1608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6351be8430e18064eb008ce3f87d035c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildableID: 48274758
+  buildableID: 192590367
   tileUpdates: {fileID: 970274284158787574}
   staticEmplacement: {fileID: 3319178072470855050}
   cols:
@@ -1673,7 +1675,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3301834328378096069}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c17ca1d2569424ba1be3606fe1bb5c7d, type: 3}
   m_Name: 

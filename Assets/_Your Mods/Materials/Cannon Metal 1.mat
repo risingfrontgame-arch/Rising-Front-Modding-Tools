@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Cannon Metal 1
-  m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: d01bb89c6809b0f4095652bfe5ba628a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4f146099280ac524c807d6351cf20021, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Detail:
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7d81d74bda16485488699a0b282349c0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1df8ebea2f47e1e41a1d03dcc67a3a71, type: 3}
         m_Scale: {x: 2, y: 2.65}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

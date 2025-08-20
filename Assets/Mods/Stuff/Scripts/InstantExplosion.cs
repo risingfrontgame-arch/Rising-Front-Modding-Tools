@@ -10,6 +10,7 @@ public class InstantExplosion : MonoBehaviour
     AudioSource aud;
     public float deployableDamage = 100f;
     ParticleSystem particle;
+    public float destroyTime = 7f;
     //// Start is called before the first frame update
     //void Start()
     //{

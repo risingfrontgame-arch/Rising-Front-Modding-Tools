@@ -13,6 +13,7 @@ public class StaticEmplacement : MonoBehaviour
     public Animator animator;
     public GameObject cameraHolder;
     [SerializeField] float fireRate = .1f;
+    public float attackAngleLimit = 360f;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shootPos;
@@ -111,6 +112,7 @@ public class StaticEmplacement : MonoBehaviour
     public int trajectoryResolution = 100;
     [HideInInspector]
     public float timeResolution = 0.1f;
+
     void OnDrawGizmos()
     {
         if (cannonBarrel != null)
@@ -130,7 +132,6 @@ public class StaticEmplacement : MonoBehaviour
             }
         }
     }
-
 
 
 
