@@ -21,7 +21,7 @@ public class DeployableObject: MonoBehaviour
     [HideInInspector]
     public float distanceOffset = 2f;
     public float health = 100f;
-
+    public GameObject destructionEffects;
     [Header("Auto Destruction Settings")]
     public bool autoDestroyGameObject = false;
     public float autoDestroyDelay = 100f;

@@ -13,7 +13,8 @@ public class StaticEmplacement : MonoBehaviour
     public Animator animator;
     public GameObject cameraHolder;
     [SerializeField] float fireRate = .1f;
-    public float attackAngleLimit = 360f;
+    public float attackAngleLimit = 60f;
+    public bool limitRotation = false;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shootPos;
