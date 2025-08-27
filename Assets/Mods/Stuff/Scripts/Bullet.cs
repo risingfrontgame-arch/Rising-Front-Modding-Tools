@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour
 // public   HitMarkerSound hitSound;
     public float bulletVelocity = 2000f;
     public float damage = 100f;
-   // public GameReference game;
-   
+    public float bulletDestroyTime = 17f;
+    // public GameReference game;
+
 }
