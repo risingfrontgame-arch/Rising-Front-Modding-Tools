@@ -11,6 +11,7 @@ public class StaticEmplacement : MonoBehaviour
     // ----- Settings -----
     [Header("General Settings")]
     public Animator animator;
+    public Transform targetDetectionTransform;
     public GameObject cameraHolder;
     [SerializeField] float fireRate = .1f;
     public float attackAngleLimit = 60f;
