@@ -27,7 +27,7 @@ public class DeployableSO : ScriptableObject
     {
         if (ID == "-1" && useCustomID == false || generateRandomID == true && useCustomID == false)
         {
-            ID = GenerateRandomString(15);
+            ID = GenerateRandomString(50);
         }
     }
 
