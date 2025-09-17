@@ -14,10 +14,7 @@ public class DeployableSO : ScriptableObject
     public GameObject objPrefab;
     public int timePeriod = 0;
 
-    private void OnEnable()
-    {
-        objPrefab.GetComponent<DeployableObject>().buildableID = ID;
-    }
+
 
     [Space]
     [Header("ID Settings")]
