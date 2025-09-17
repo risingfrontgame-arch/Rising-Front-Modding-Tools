@@ -1,24 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using System.Text;
-
-[CreateAssetMenu(fileName = "New Deployable Object")]
-public class DeployableSO : ScriptableObject
+[CreateAssetMenu(fileName = "New Vehicle", menuName = "VehicleSO")]
+public class VehicleSO : ScriptableObject
 {
-
+    public string VehicleName = "Vehicle Name";
+    public int price = 100;
     public Sprite icon;
-    public int price;
-    public string objName;
-    public GameObject objPrefab;
-    public int timePeriod = 0;
-
-    private void OnEnable()
-    {
-        objPrefab.GetComponent<DeployableObject>().buildableID = ID;
-    }
-
+    public GameObject tankPrefab;
+    public bool isGreenTeam = true;
     [Space]
     [Header("ID Settings")]
     public string ID = "-1";
@@ -51,7 +40,5 @@ public class DeployableSO : ScriptableObject
         }
         return sb.ToString();
     }
-
-
 
 }
