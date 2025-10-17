@@ -14,6 +14,7 @@ public class StaticEmplacement : MonoBehaviour
     public Transform targetDetectionTransform;
     public GameObject cameraHolder;
     [SerializeField] float fireRate = .1f;
+    public float cannonRotateSpeed = .5f;
     public float vertAngleMax = 85f;
     public float vertAngleMin = -55f;
     public float attackAngleLimit = 60f;
@@ -119,6 +120,7 @@ public class StaticEmplacement : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        // ---- Trajectory Gizmo ----
         if (cannonBarrel != null)
         {
             Vector3 initialPosition = cannonBarrel.transform.position;
@@ -135,7 +137,93 @@ public class StaticEmplacement : MonoBehaviour
                 previousPosition = newPosition;
             }
         }
+
+        // ---- Curved Aim Cone Gizmo (follows trajectory) ----
+        if (cannonBarrel != null)
+        {
+            Vector3 origin = cannonBarrel.position;
+            Vector3 initialVelocityVec = cannonBarrel.TransformDirection(Vector3.forward) * initialVelocity;
+            float halfAngle = aimCone * 0.5f;
+            int coneSegments = 24;          // number of radial lines per ring
+            int ringCount = trajectoryResolution / 4; // number of rings along the curve (density)
+            float step = timeResolution * 4; // spacing between rings
+
+            List<Vector3> trajectoryPoints = new List<Vector3>();
+            trajectoryPoints.Add(origin);
+
+            // --- Sample trajectory points ---
+            for (int i = 1; i <= ringCount; i++)
+            {
+                float t = step * i;
+                Vector3 newPos = origin + initialVelocityVec * t + 0.5f * Physics.gravity * t * t;
+                trajectoryPoints.Add(newPos);
+            }
+
+            // --- Draw the curved cone along the trajectory ---
+            Gizmos.color = new Color(1f, 0.5f, 0f, 0.6f);
+
+            for (int i = 0; i < trajectoryPoints.Count; i++)
+            {
+                Vector3 pos = trajectoryPoints[i];
+                Vector3 forwardDir;
+                if (i < trajectoryPoints.Count - 1)
+                    forwardDir = (trajectoryPoints[i + 1] - pos).normalized;
+                else
+                    forwardDir = (pos - trajectoryPoints[i - 1]).normalized;
+
+                // Radius increases linearly with distance along the arc
+                float distance = Vector3.Distance(origin, pos);
+                float radius = distance * Mathf.Tan(halfAngle * Mathf.Deg2Rad);
+
+                Quaternion rot = Quaternion.LookRotation(forwardDir, Vector3.up);
+                Vector3 prevPoint = Vector3.zero;
+                List<Vector3> ringPoints = new List<Vector3>();
+
+                for (int j = 0; j <= coneSegments; j++)
+                {
+                    float angle = (j / (float)coneSegments) * 360f;
+                    Vector3 dir = rot * (Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right);
+                    Vector3 point = pos + dir * radius;
+                    ringPoints.Add(point);
+
+                    if (j > 0)
+                        Gizmos.DrawLine(prevPoint, point);
+                    prevPoint = point;
+                }
+
+                // Connect to previous ring to form the surface
+                if (i > 0)
+                {
+                    List<Vector3> prevRing = new List<Vector3>();
+                    Vector3 prevPos = trajectoryPoints[i - 1];
+                    float prevDistance = Vector3.Distance(origin, prevPos);
+                    float prevRadius = prevDistance * Mathf.Tan(halfAngle * Mathf.Deg2Rad);
+                    Quaternion prevRot = Quaternion.LookRotation(
+                        (pos - prevPos).normalized, Vector3.up
+                    );
+
+                    for (int j = 0; j <= coneSegments; j++)
+                    {
+                        float angle = (j / (float)coneSegments) * 360f;
+                        Vector3 dirPrev = prevRot * (Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right);
+                        Vector3 pointPrev = prevPos + dirPrev * prevRadius;
+                        prevRing.Add(pointPrev);
+
+                        // Connect ring segments
+                        Gizmos.color = new Color(1f, 0.4f, 0f, 0.15f);
+                        Gizmos.DrawLine(pointPrev, ringPoints[j]);
+                    }
+                }
+            }
+
+            // Optional: draw the central trajectory line for clarity
+            Gizmos.color = Color.red;
+            for (int i = 0; i < trajectoryPoints.Count - 1; i++)
+                Gizmos.DrawLine(trajectoryPoints[i], trajectoryPoints[i + 1]);
+        }
     }
+
+
 
 
 
