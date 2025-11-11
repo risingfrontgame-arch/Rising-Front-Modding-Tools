@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] ParticleSystem dirt;
     [SerializeField] GameObject instantExplosion;
     [SerializeField] bool updateBulletRotation = false;
+    public bool updateImpactRotation = false;
     public bool isExplosive = false;
     [SerializeField] Rigidbody rb;
  [SerializeField]   TrailRenderer mesh;

@@ -29,6 +29,8 @@ public class SoldierStats : ScriptableObject
     public float speedMultiplier = 1f;
     public float range = 60f;
     public GameObject bulletTracer;
+    public ParticleSystem customDirtImpact;
+    public ParticleSystem customBloodImpact;
     public float bulletTracerSpeed = 11f;
     //[ColorUsage(true, true)]
     // public Color tracerColor = new Color(191  , 42, 0 );
