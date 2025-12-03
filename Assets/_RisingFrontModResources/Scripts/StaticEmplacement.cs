@@ -104,8 +104,12 @@ public class StaticEmplacement : MonoBehaviour
     float sensitivity = .6f;
     float smoothing = 2.0f;
 
-   // [HideInInspector]
-   // public Pathfinding.SoldierAI distantTarget;
+    [Tooltip("Lower Value = Further Range")]
+    [Range(0.75f, 1.25f)]
+    public float trajectoryMultiplier = 1f;
+
+    // [HideInInspector]
+    // public Pathfinding.SoldierAI distantTarget;
     [HideInInspector]
     public bool isAimedAtTarget = false;
     [HideInInspector]
