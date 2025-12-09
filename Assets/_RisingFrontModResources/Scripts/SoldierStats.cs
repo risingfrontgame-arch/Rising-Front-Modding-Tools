@@ -32,6 +32,10 @@ public class SoldierStats : ScriptableObject
     public ParticleSystem customDirtImpact;
     public ParticleSystem customBloodImpact;
     public float bulletTracerSpeed = 11f;
+    public GameObject grenadeObj;
+    public float grenadeMaxRange = 30f;
+    public float grenadeCoolDown = 200f;
+    public int grenadeCount = 2;
     //[ColorUsage(true, true)]
     // public Color tracerColor = new Color(191  , 42, 0 );
     public AudioClip shotSounds;
