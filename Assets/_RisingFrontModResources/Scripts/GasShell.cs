@@ -5,6 +5,7 @@ using UnityEngine;
 public class GasShell : MonoBehaviour
 {
 
+    [Tooltip("damage rate is 1.9 sec")]
     [SerializeField] float damage = 10f;
     [SerializeField] float gasLength = 8f;
     float gasRange = 5f;

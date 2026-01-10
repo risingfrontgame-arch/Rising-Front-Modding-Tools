@@ -11,16 +11,22 @@ public class DeployableObject: MonoBehaviour
     [HideInInspector]
     public Pathfinding.RecastTileUpdate tileUpdates;
     public StaticEmplacement staticEmplacement;
-    
+    [Space]
+    [Tooltip("it should auto assign")]
     public Collider[] cols;
-  
+
+    [Header("Auto Destruction Settings")]
+    [Tooltip("These objects are disabled until placed")]
     public GameObject[] disableObjs;
+    [Tooltip("These objects disable after being placed")]
     public GameObject[] showTheseObjectsWhileItsBeingPlaced;
-    public FlareLauncher flare;
+    //public FlareLauncher flare;
+    [Header("Main Settings")]
     public float heightOffset = 0f;
     [HideInInspector]
     public float distanceOffset = 2f;
     public float health = 100f;
+    [Header("Destruction Effects")]
     public GameObject destructionEffects;
     public Transform destructionEffectsPosition;
     [Header("Auto Destruction Settings")]

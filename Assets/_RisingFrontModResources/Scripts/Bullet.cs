@@ -8,12 +8,21 @@ public class Bullet : MonoBehaviour
     [SerializeField] ParticleSystem blood;
     [SerializeField] ParticleSystem dirt;
     [SerializeField] GameObject instantExplosion;
+
+    [Space]
+
     [SerializeField] bool updateBulletRotation = false;
     public bool updateImpactRotation = false;
     public bool isExplosive = false;
+
+    [Space]
+
     [SerializeField] Rigidbody rb;
- [SerializeField]   TrailRenderer mesh;
-// public   HitMarkerSound hitSound;
+    [SerializeField]   TrailRenderer mesh;
+    // public   HitMarkerSound hitSound;
+
+    [Space]
+
     public float bulletVelocity = 2000f;
     public float damage = 100f;
     public float bulletDestroyTime = 17f;

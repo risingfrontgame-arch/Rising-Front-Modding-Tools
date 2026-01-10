@@ -8,11 +8,17 @@ public class Deployables : ScriptableObject
 {
 
     public GameObject prefab;
+    [Tooltip("0-100%")]
     public int chanceToSpawnSecondaryPrefabs = 0;
     public GameObject[] secondaryPrefabs;
+    [Space]
+    [Tooltip("The Icon That Displays in Command Map")]
     public Sprite icon;
+    [Tooltip("The Icon That Displays When Placing on Command Map")]
     public GameObject mapIcon;
     public string name;
+    [Space]
+    [Tooltip("Leave Unchecked for Red Team")]
     public bool isGreenTeam = false;
     public int price = 50;
 

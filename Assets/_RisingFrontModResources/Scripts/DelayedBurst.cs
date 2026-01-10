@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class DelayedBurst : MonoBehaviour
 {
+    [Header("General Settings")]
     [SerializeField] Transform[] shootPositions;
     [SerializeField] ParticleSystem[] muzzelFlashes;
-    [SerializeField] float timeDelay = 10f;
     [SerializeField] GameObject bullet;
-    [SerializeField] float fireRate = .1f;
     [SerializeField] AudioSource shotAudio;
-    [SerializeField] float bulletVelocity = 2000f;
+    [Space]
+    [SerializeField] float timeDelay = 10f;
+    [SerializeField] float fireRate = .1f;
+    [SerializeField] float bulletVelocity = 48f;
     [SerializeField] float aimCone = 3f;
     [SerializeField] float bulletDamage = 100f;
 
     [SerializeField] int bulletAmount = 100;
-    [SerializeField] int startBulletAmount;
+    //[SerializeField] int startBulletAmount;
+    [Header("For Animations")]
     [SerializeField] bool playOnAwake = false;
     float nextShot;
 
@@ -31,7 +34,7 @@ public class DelayedBurst : MonoBehaviour
 
     private void Awake()
     {
-        startBulletAmount = bulletAmount;
+ //       startBulletAmount = bulletAmount;
     }
 
     private void OnEnable()
@@ -39,7 +42,7 @@ public class DelayedBurst : MonoBehaviour
         if (playOnAwake)
         {
             timeDelay = 0;
-            bulletAmount = startBulletAmount;
+//            bulletAmount = startBulletAmount;
         }
     }
 

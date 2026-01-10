@@ -16,7 +16,10 @@ public class MountedSoldierInfo : ScriptableObject
     public int magSize = 5;
     public bool canDamageArmor = false;
     public float armorDamage = 10f;
+    [Tooltip("Should only animate the soldier itself")]
     public RuntimeAnimatorController soldierAnimator;
+
+    [Header("Weapon FX")]
 
     public ParticleSystem impactEffect;
     public ParticleSystem bloodEffect;
@@ -24,10 +27,12 @@ public class MountedSoldierInfo : ScriptableObject
     public float weaponSoundMaxRange = 200f;
     public GameObject weaponProjectile;
     public float projectileSpeed;
-    [Header("Melee Only Settings")]
+
+    [Header("Melee Settings")]
     public bool isMelee = false;
-    public float findTargetRange = 81f;
     public float attackDelay = 0f;
+    [Header("If ranged, set to 1 more than the range of their weapon")]
+    public float findTargetRange = 81f;
 
     [Header("Horse Settings")]
     public Material horseMaterial;

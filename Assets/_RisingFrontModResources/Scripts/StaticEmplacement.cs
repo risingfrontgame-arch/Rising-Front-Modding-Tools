@@ -14,24 +14,29 @@ public class StaticEmplacement : MonoBehaviour
     public Transform targetDetectionTransform;
     public GameObject cameraHolder;
     [SerializeField] float fireRate = .1f;
+    [Header("Rotation Settings")]
     public float cannonRotateSpeed = .5f;
     public float vertAngleMax = 85f;
     public float vertAngleMin = -55f;
     public float attackAngleLimit = 60f;
     public bool limitRotation = false;
+    [Header("Bullet Related Settings")]
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shootPos;
     [SerializeField] AudioSource aud;
-    public Transform[] standPositions;
  // [SerializeField] AudioSource aud;
     [Header("Cannon Variables")]
+    [Tooltip("Set to true for high angle, false for low angle")]
     public bool useHighAngle = true; // Set to true for high angle, false for low angle
+    [Tooltip("set to true for cannon, set false for machine gun like behavior")]
     public bool isCannon;
     public Transform cannonBase;
     public Transform cannonBarrel;
     public Transform barrelObj;
+    [Tooltip("Set to false for autonomous emplacement (unmanned)")]
     public bool requireNearbySoldier = true;
+    public Transform[] standPositions;
     public float maxRange = 500f;
     public int burstCount = 5;
     public float burstCooldown = 0;
@@ -105,7 +110,7 @@ public class StaticEmplacement : MonoBehaviour
     float smoothing = 2.0f;
 
     [Tooltip("Lower Value = Further Range")]
-    [Range(0.75f, 1.25f)]
+    [Range(0.9f, 1.1f)]
     public float trajectoryMultiplier = 1f;
 
     // [HideInInspector]
