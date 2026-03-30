@@ -64,10 +64,9 @@ public class SoldierStats : ScriptableObject
     public GameObject[] backGear;
     [Header("SFX")]
     public AudioClip shotSounds;
-    public AudioClip[] randomShotSounds;
-
+    [Tooltip("Check true if you only need 1 sfx")]
     public bool useDefaultShotSFXPool = false;
-
+    public AudioClip[] randomShotSounds;
     public AudioClip[] injuredSounds;
     public AudioClip[] randomCombatSounds;
     [Range(1, 100)]
