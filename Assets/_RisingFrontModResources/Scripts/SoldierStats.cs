@@ -65,6 +65,9 @@ public class SoldierStats : ScriptableObject
     [Header("SFX")]
     public AudioClip shotSounds;
     public AudioClip[] randomShotSounds;
+
+    public bool useDefaultShotSFXPool = false;
+
     public AudioClip[] injuredSounds;
     public AudioClip[] randomCombatSounds;
     [Range(1, 100)]
