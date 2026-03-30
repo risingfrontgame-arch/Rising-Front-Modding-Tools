@@ -54,8 +54,6 @@ public class SoldierStats : ScriptableObject
 
     //[ColorUsage(true, true)]
     // public Color tracerColor = new Color(191  , 42, 0 );
-    [Header("Weapon SFX")]
-    public AudioClip shotSounds;
     [Header("Weapon")]
     public GameObject weaponModel;
     [Tooltip("Attaches to right wrist")]
@@ -64,5 +62,16 @@ public class SoldierStats : ScriptableObject
     public GameObject body;
     public GameObject[] headGear;
     public GameObject[] backGear;
+    [Header("SFX")]
+    public AudioClip shotSounds;
+    public AudioClip[] randomShotSounds;
+    public AudioClip[] injuredSounds;
+    public AudioClip[] randomCombatSounds;
+    [Range(1, 100)]
+    public float randomCombatSoundFrequencys = 10; //1 = lowest 100 = maximum
+    public AudioClip[] reloadingSounds;
+    public float reloadSoundDelay = 0f;
+    public AudioClip[] grenadethrowSounds;
+    public float grenadeThrowSoundDelay = 0f;
 
 }
