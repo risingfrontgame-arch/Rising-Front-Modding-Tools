@@ -25,7 +25,8 @@ public class StaticEmplacement : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shootPos;
     [SerializeField] AudioSource aud;
- // [SerializeField] AudioSource aud;
+    public int bulletPoolSize = 10;
+    // [SerializeField] AudioSource aud;
     [Header("Cannon Variables")]
     [Tooltip("Set to true for high angle, false for low angle")]
     public bool useHighAngle = true; // Set to true for high angle, false for low angle
