@@ -65,7 +65,7 @@ public class SoldierStats : ScriptableObject
     [Header("SFX")]
     public AudioClip shotSounds;
     [Tooltip("Check true if you only need 1 sfx")]
-    public bool useDefaultShotSFXPool = false;
+    public bool useDefaultShotSFXPool = true;
     public AudioClip[] randomShotSounds;
     public AudioClip[] injuredSounds;
     public AudioClip[] randomCombatSounds;
